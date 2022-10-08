@@ -1,0 +1,46 @@
+Library
+  library($ONEFIFTY-LIB/150basis/sources.cm)
+
+#if CHECKPOINT >= 1 orelse not defined(CHECKPOINT)
+  library(book/sources.cm)
+#endif
+#if CHECKPOINT >= 2 orelse not defined(CHECKPOINT)
+  library(test/sources.cm)
+#endif
+#if CHECKPOINT >= 3 orelse not defined(CHECKPOINT)
+  library(student/sources.cm)
+#endif
+#if CHECKPOINT >= 6 orelse not defined(CHECKPOINT)
+  library(reader/sources.cm)
+#endif
+#if CHECKPOINT >= 7 orelse not defined(CHECKPOINT)
+  library(adv-student/sources.cm)
+#endif
+#if CHECKPOINT >= 10 orelse not defined(CHECKPOINT)
+  structure Find150
+#endif
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+
+(* CHECKPOINT allows students to run smlnj -DCHECKPOINT=n -m sources.cm
+ * at intermediate stages, instead of having to define all structures
+ * before testing
+ * (as seen in Section 8 of https://www.smlnj.org/doc/CM/new.pdf) *)
+#if CHECKPOINT >= 1 orelse not defined(CHECKPOINT)
+  book/sources.cm
+#endif
+#if CHECKPOINT >= 2 orelse not defined(CHECKPOINT)
+  test/sources.cm (bind:(anchor:book value:book))
+#endif
+#if CHECKPOINT >= 3 orelse not defined(CHECKPOINT)
+  student/sources.cm (bind:(anchor:book value:book))
+#endif
+#if CHECKPOINT >= 6 orelse not defined(CHECKPOINT)
+  reader/sources.cm (bind:(anchor:book value:book))
+#endif
+#if CHECKPOINT >= 7 orelse not defined(CHECKPOINT)
+  adv-student/sources.cm (bind:(anchor:book value:book))
+#endif
+#if CHECKPOINT >= 10 orelse not defined(CHECKPOINT)
+  Find150.sml
+#endif

@@ -1,0 +1,57 @@
+// 0
+
+// Each of these if commands will cause
+// the program to terminate early if the
+// bexp it tests doesn't evaluate properly
+
+// Constants
+if (true)   {          } else {return  1;}
+if (false)  {return  2;} else {          }
+
+// Equalty
+if (3 == 4) {return  3;} else {          }
+if (4 == 4) {          } else {return  4;}
+
+// Inequality
+if (3 != 4) {          } else {return  5;}
+if (4 != 4) {return  6;} else {          }
+
+// Less Than
+if (3 < 4)  {          } else {return  7;}
+if (4 < 4)  {return  8;} else {          }
+if (5 < 4)  {return  9;} else {          }
+
+// Less Than or Equal
+if (3 <= 4) {          } else {return 10;}
+if (4 <= 4) {          } else {return 11;}
+if (5 <= 4) {return 12;} else {          }
+
+// Greater Than
+if (3 > 4)  {return 13;} else {          }
+if (4 > 4)  {return 14;} else {          }
+if (5 > 4)  {          } else {return 15;}
+
+// Greater Than or Equal
+if (3 >= 4) {return 16;} else {          }
+if (4 >= 4) {          } else {return 17;}
+if (5 >= 4) {          } else {return 18;}
+
+// Not
+if (!true)  {return 19;} else {          }
+if (!false) {          } else {return 20;}
+
+// Or
+if (true  || true ) {          } else {return 21;}
+if (true  || false) {          } else {return 22;}
+if (false || true ) {          } else {return 23;}
+if (false || false) {return 24;} else {          }
+
+// And
+if (true  && true ) {          } else {return 25;}
+if (true  && false) {return 26;} else {          }
+if (false && true ) {return 27;} else {          }
+if (false && false) {return 28;} else {          }
+
+
+// If evaluation gets here then everything worked
+return 0;

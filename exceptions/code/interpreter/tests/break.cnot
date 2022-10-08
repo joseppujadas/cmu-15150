@@ -1,0 +1,11 @@
+// 10
+x := 0;
+loop {
+  if (x >= 10) {
+    break;
+    return 0; // if this line runs the test will fail
+  } else {
+    x := x + 1;
+  }
+}
+return x;

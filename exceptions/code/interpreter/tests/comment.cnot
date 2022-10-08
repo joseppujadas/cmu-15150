@@ -1,0 +1,15 @@
+// 1
+// This is a comment
+// Oh boy this too!
+return 1;
+// execution is over by now but we don't care
+// Yeah! The interpreter can't tell us what to do
+
+
+/*
+ You can also do block comments
+*/
+
+
+
+// Hey guys wait for me

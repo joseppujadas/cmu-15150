@@ -1,0 +1,10 @@
+Library
+  signature TEST
+  functor MkTest
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+
+  $book/sources.cm
+
+  TEST.sig
+  MkTest.fun

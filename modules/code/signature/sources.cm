@@ -1,0 +1,20 @@
+Library
+  library($ONEFIFTY-LIB/150basis/sources.cm)
+
+  signature TREE
+  structure BinaryTree
+
+  signature FOREST
+  functor MkForest
+
+  structure Test
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+
+  TREE.sig
+  BinaryTree.sml
+
+  FOREST.sig
+  MkForest.fun
+
+  Test.sml

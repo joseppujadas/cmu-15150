@@ -1,0 +1,12 @@
+Library
+  library($ONEFIFTY-LIB/150basis/sources.cm)
+  library($ONEFIFTY-LIB/sequence/sources.cm)
+
+  library(utils/sources.cm)
+  library(tracker/sources.cm)
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+  $ONEFIFTY-LIB/sequence/sources.cm
+
+  utils/sources.cm
+  tracker/sources.cm

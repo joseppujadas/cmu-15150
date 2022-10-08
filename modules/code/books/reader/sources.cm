@@ -1,0 +1,10 @@
+Library
+  signature READER
+  functor MkReader
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+
+  $book/sources.cm
+
+  READER.sig
+  MkReader.fun

@@ -1,0 +1,10 @@
+Library
+  library($ONEFIFTY-LIB/150basis/sources.cm)
+
+  signature REFRAND
+  structure RefRand
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+
+  REFRAND.sig
+  RefRand.sml

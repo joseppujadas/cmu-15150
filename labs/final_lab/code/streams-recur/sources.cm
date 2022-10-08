@@ -1,0 +1,10 @@
+Library
+  library($ONEFIFTY-LIB/150basis/sources.cm)
+  library($ONEFIFTY-LIB/stream/sources.cm)
+
+  structure Recur
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+  $ONEFIFTY-LIB/stream/sources.cm
+
+  Recur.sml

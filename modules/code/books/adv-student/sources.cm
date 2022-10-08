@@ -1,0 +1,24 @@
+Library
+#if CHECKPOINT >= 7 orelse not defined(CHECKPOINT)
+  functor MkNemesis
+#endif
+#if CHECKPOINT >= 8 orelse not defined(CHECKPOINT)
+  functor MkCompose
+#endif
+#if CHECKPOINT >= 9 orelse not defined(CHECKPOINT)
+  structure Reset
+#endif
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+  $book/sources.cm
+
+(* Intermediate CHECKPOINT settings, to test 1 file at a time *)
+#if CHECKPOINT >= 7 orelse not defined(CHECKPOINT)
+  MkNemesis.fun
+#endif
+#if CHECKPOINT >= 8 orelse not defined(CHECKPOINT)
+  MkCompose.fun
+#endif
+#if CHECKPOINT >= 9 orelse not defined(CHECKPOINT)
+  Reset.sml
+#endif

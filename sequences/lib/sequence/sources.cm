@@ -1,0 +1,8 @@
+Library
+  signature SEQUENCE
+  structure Seq
+is
+  $/basis.cm
+
+  SEQUENCE.sig
+  Seq.sml

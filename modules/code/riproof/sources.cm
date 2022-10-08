@@ -1,0 +1,11 @@
+Library
+  library($ONEFIFTY-LIB/150basis/sources.cm)
+
+  signature QUEUE
+  structure LQ
+  structure LLQ
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+
+  QUEUE.sig
+  queues.sml

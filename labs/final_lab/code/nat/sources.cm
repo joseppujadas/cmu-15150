@@ -1,0 +1,18 @@
+Library
+  library($ONEFIFTY-LIB/150basis/sources.cm)
+
+  signature NAT
+  structure UnitNat
+  structure DataNat
+
+  signature ARITH
+  functor MkArith
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+
+  NAT.sig
+  UnitNat.sml
+  DataNat.sml
+
+  ARITH.sig
+  MkArith.fun

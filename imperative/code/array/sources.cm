@@ -1,0 +1,16 @@
+Library
+  library($ONEFIFTY-LIB/150basis/sources.cm)
+
+  signature ARRAYFN
+  structure ArrayFn
+
+  signature MEMOFIB
+  functor MemoFib
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+
+  ARRAYFN.sig
+  ArrayFn.sml
+
+  MEMOFIB.sig
+  MemoFib.fun

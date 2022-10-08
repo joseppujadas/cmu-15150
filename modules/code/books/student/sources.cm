@@ -1,0 +1,25 @@
+Library
+#if CHECKPOINT >= 3 orelse not defined(CHECKPOINT)
+  structure Polly
+#endif
+#if CHECKPOINT >= 4 orelse not defined(CHECKPOINT)
+  functor MkStudent
+#endif
+#if CHECKPOINT >= 5 orelse not defined(CHECKPOINT)
+  structure Honk
+#endif
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+
+  $book/sources.cm
+
+(* Intermediate CHECKPOINT settings to test 1 file at a time *)
+#if CHECKPOINT >= 3 orelse not defined(CHECKPOINT)
+  Polly.sml
+#endif
+#if CHECKPOINT >= 4 orelse not defined(CHECKPOINT)
+  MkStudent.fun
+#endif
+#if CHECKPOINT >= 5 orelse not defined(CHECKPOINT)
+  Honk.sml
+#endif

@@ -1,0 +1,10 @@
+Library
+  library($ONEFIFTY-LIB/150basis/sources.cm)
+
+  signature TREES
+  structure Trees
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+
+  TREES.sig
+  Trees.sml

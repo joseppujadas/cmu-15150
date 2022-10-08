@@ -1,0 +1,211 @@
+\documentclass[11pt]{article}
+
+\usepackage{amssymb, amsmath, amsthm, amsfonts}
+\usepackage{listings,xcolor,lstautogobble}
+\usepackage{fancyhdr,parskip}
+\usepackage[margin=0.8in]{geometry}
+
+% homework header
+\pagestyle{fancy}
+\setlength{\headheight}{0.3in}
+\lhead{Basics}
+\rhead{15-150, Principles of Functional Programming}
+
+% task environment
+\newcommand{\task}[1]{\clearpage\textbf{Task #1}. \\[0.5em]}
+
+% symbols
+\newcommand{\eeq}{\cong}
+\newcommand{\neeq}{\ncong}
+\newcommand{\stepsTo}{\Longrightarrow}
+\newcommand{\stepsToIn}[1]{\Longrightarrow^{#1}}
+
+% code style
+\definecolor{background_color}{RGB}{255, 255, 255}
+\definecolor{string_color}    {RGB}{180, 156,   0}
+\definecolor{identifier_color}{RGB}{  0,   0,   0}
+\definecolor{keyword_color}   {RGB}{ 64, 100, 255}
+\definecolor{comment_color}   {RGB}{  0, 117, 110}
+\definecolor{number_color}    {RGB}{ 84,  84,  84}
+\lstdefinestyle{15150code}{
+    basicstyle=\ttfamily,
+    numberstyle=\tiny\ttfamily\color{number_color},
+    backgroundcolor=\color{background_color},
+    stringstyle=\color{string_color},
+    identifierstyle=\color{identifier_color},
+    keywordstyle=\color{keyword_color},
+    commentstyle=\color{comment_color},
+    numbers=left,
+    frame=none,
+    columns=fixed,
+    tabsize=2,
+    breaklines=true,
+    keepspaces=true,
+    showstringspaces=false,
+    captionpos=b,
+    autogobble=true,
+    mathescape=true,
+}
+\lstdefinelanguage{sml}{
+    language=ML,
+    morestring=[b]",
+    morecomment=[s]{(*}{*)},
+    morekeywords={
+        bool, char, exn, int, real, string, unit, list, option,
+        EQUAL, GREATER, LESS, NONE, SOME, nil,
+        andalso, orelse, true, false, not,
+        if, then, else, case, of, as,
+        let, in, end, local, val, rec,
+        datatype, type, exception, handle,
+        fun, fn, op, raise, ref,
+        structure, struct, signature, sig, functor, where,
+        include, open, use, infix, infixr, o, print
+    }
+}
+% code inline
+\newcommand{\code}[2][]{{\sloppy
+\ifmmode
+    \text{\lstinline[language=sml,style=15150code,#1]`#2`}
+\else
+    {\lstinline[language=sml,style=15150code,#1]`#2`}%
+\fi}}
+
+% code block
+\lstnewenvironment{codeblock}[1][]{\lstset{language=sml,style=15150code,#1}}{}
+
+% code imported from a file
+\newcommand{\codefile}[2][]{\lstinputlisting[language=sml,style=15150code,mathescape=false,frame=single,#1]{#2}}
+
+\begin{document}
+
+% Sample usage:
+
+% \code{fn x => x}
+
+% \begin{codeblock}
+%     fun fact 0 = 1
+%       | fact n = n * fact (n - 1)
+% \end{codeblock}
+
+% \begin{align*}
+%     \code{(fn x => 2 * x) (3 + 4)}
+%       &\eeq \code{(fn x => 2 * x) 7} \tag{definition of \code{+}} \\
+%       &\eeq \code{2 * 7}             \tag{function application} \\
+%       &\eeq \code{14}                \tag{definition of \code{*}}
+% \end{align*}
+
+% \codefile[linerange=2-5]{path/to/file.sml}
+% \codefile{path/to/file.sml} includes the whole file
+
+\task{2.1}
+% TODO: Task 2.1
+
+\task{2.2}
+% TODO: Task 2.2
+
+\task{2.3}
+% TODO: Task 2.3
+
+\task{2.4}
+% TODO: Task 2.4
+
+\task{3.1}
+% TODO: Task 3.1
+
+\task{3.2}
+% TODO: Task 3.2
+
+\task{3.3}
+% TODO: Task 3.3
+
+\task{3.4}
+% TODO: Task 3.4
+
+\task{3.5}
+% TODO: Task 3.5
+
+\task{3.6}
+% TODO: Task 3.6
+
+\task{3.7}
+% TODO: Task 3.7
+
+\task{3.8}
+% TODO: Task 3.8
+
+\task{3.9}
+% TODO: Task 3.9
+
+\task{3.10}
+% TODO: Task 3.10
+
+\task{3.11}
+% TODO: Task 3.11
+
+\task{4.1}
+% TODO: Task 4.1
+
+\task{4.2}
+% TODO: Task 4.2
+
+\task{4.3}
+% TODO: Task 4.3
+
+\task{4.4}
+% TODO: Task 4.4
+
+\task{4.5}
+% TODO: Task 4.5
+
+\task{4.6}
+% TODO: Task 4.6
+
+\task{4.7}
+% TODO: Task 4.7
+
+\task{5.1}
+% TODO: Task 5.1
+
+\task{5.2}
+% TODO: Task 5.2
+
+\task{6.1}
+% TODO: Task 6.1
+
+\task{6.2}
+% TODO: Task 6.2
+
+\task{6.3}
+% TODO: Task 6.3
+
+\task{6.4}
+% TODO: Task 6.4
+
+\task{6.5}
+% TODO: Task 6.5
+
+\task{7.1}
+% TODO: Task 7.1
+
+\task{7.2}
+% TODO: Task 7.2
+
+\task{7.3}
+% TODO: Task 7.3
+
+\task{7.4}
+% TODO: Task 7.4
+
+\task{7.5}
+% TODO: Task 7.5
+
+\task{8.1}
+% TODO: Task 8.1
+
+\task{8.2}
+% TODO: Task 8.2
+
+\task{8.3}
+% TODO: Task 8.3
+
+\end{document}

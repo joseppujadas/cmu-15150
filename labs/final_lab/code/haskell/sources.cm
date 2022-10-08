@@ -1,0 +1,18 @@
+Library
+  library($ONEFIFTY-LIB/150basis/sources.cm)
+  library($ONEFIFTY-LIB/stream/sources.cm)
+
+  signature LAZY
+  structure Lazy
+
+  signature LAZYFNS
+  functor LazyFns
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+  $ONEFIFTY-LIB/stream/sources.cm
+
+  LAZY.sig
+  Lazy.sml
+
+  LAZYFNS.sig
+  LazyFns.fun

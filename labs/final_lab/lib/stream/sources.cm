@@ -1,0 +1,8 @@
+Library
+  signature STREAM
+  structure Stream
+is
+  $/basis.cm
+
+  STREAM.sig
+  Stream.sml

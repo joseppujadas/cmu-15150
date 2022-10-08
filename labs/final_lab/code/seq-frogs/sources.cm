@@ -1,0 +1,10 @@
+Library
+  library($ONEFIFTY-LIB/150basis/sources.cm)
+  library($ONEFIFTY-LIB/sequence/sources.cm)
+
+  structure Frogs
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+  $ONEFIFTY-LIB/sequence/sources.cm
+
+  Frogs.sml

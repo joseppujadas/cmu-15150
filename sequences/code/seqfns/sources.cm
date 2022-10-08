@@ -1,0 +1,12 @@
+Library
+  library($ONEFIFTY-LIB/150basis/sources.cm)
+  library($ONEFIFTY-LIB/sequence/sources.cm)
+
+  signature SEQFNS
+  structure SeqFns
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+  $ONEFIFTY-LIB/sequence/sources.cm
+
+  SEQFNS.sig
+  SeqFns.sml

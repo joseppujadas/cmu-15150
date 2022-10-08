@@ -1,0 +1,21 @@
+Library
+  structure General
+
+  structure Bool
+  structure Int
+  structure Real
+  structure Math
+
+  structure Char
+  structure String
+
+  structure Option
+  structure Either
+  structure List
+  structure ListPair
+
+  structure Fn
+
+  structure Ref
+is
+  $/basis.cm

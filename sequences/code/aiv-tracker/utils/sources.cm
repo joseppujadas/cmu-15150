@@ -1,0 +1,9 @@
+Library
+  signature UTILS
+  structure Utils
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+  $ONEFIFTY-LIB/sequence/sources.cm
+
+  UTILS.sig
+  Utils.sml

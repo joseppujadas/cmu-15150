@@ -1,0 +1,12 @@
+Library
+  signature BOOK
+  structure Book
+  structure SlowBook
+  signature STUDENT
+is
+  $ONEFIFTY-LIB/150basis/sources.cm
+
+  BOOK.sig
+  Book.sml
+  SlowBook.sml
+  STUDENT.sig
